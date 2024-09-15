@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserComparator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">My_Array_List</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">UserComparator.java</span></div><h1>UserComparator.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.util.Comparator;
+
+/**
+ * A generic comparator that compares objects of type.
+ *
+ * @param &lt;T&gt; the type of objects that this comparator compares, which must implement {@link Comparable}
+ */
+<span class="fc" id="L10">public class UserComparator&lt;T extends Comparable&lt;T&gt;&gt; implements Comparator&lt;T&gt; {</span>
+
+    /**
+     * Compares two objects using their natural ordering.
+     * This method returns a negative integer, zero, or a positive integer if the first argument is less than,
+     * equal to, or greater than the second, respectively.
+     *
+     * @param o1 the first object to be compared
+     * @param o2 the second object to be compared
+     * @return a negative integer, zero, or a positive integer as the first object is less than, equal to,
+     *         or greater than the second
+     * @throws NullPointerException if either of the arguments is null
+     */
+    @Override
+    public int compare(T o1, T o2) {
+<span class="fc" id="L25">        return o1.compareTo(o2);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
